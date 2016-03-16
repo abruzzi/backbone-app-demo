@@ -13,6 +13,6 @@ open another terminal
 ./server.sh
 ```
 
-then you launch your `chrome` and should see something in `http://localhost:9999`
+then you launch your `chrome` and should see something in `http://localhost:9999/#/list`
 
 Have fun.
