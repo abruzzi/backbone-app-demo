@@ -1,6 +1,8 @@
-function AppView() {
+var $ = require('jquery');
 
-   this.showView(view) {
+var AppView = function() {
+
+   this.showView = function(view) {
     if (this.currentView){
       this.currentView.close();
     }

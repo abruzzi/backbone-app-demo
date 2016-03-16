@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
 
-var template = require('./tempaltes/list-item.hbs');
+var template = require('../templates/list-item.hbs');
 
 var ListItemView = Backbone.View.extend({
 	initialize: function() {
@@ -8,7 +8,7 @@ var ListItemView = Backbone.View.extend({
 	},
 
 	render: function() {
-		this.$el.html(template(this.model));
+		this.$el.html(template(this.model.toJSON()));
 		return this;
 	}
 });

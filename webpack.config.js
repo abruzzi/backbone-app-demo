@@ -3,7 +3,7 @@ module.exports = {
   output: {
     filename: './dist/bundle.js'
   },
-  loaders: [
-    { test: /\.hbs$/, loader: "handlebars-loader" }
-  ]
+  module: {
+  	loaders: [{ test: /\.hbs$/, loader: 'handlebars-loader' }]
+  }
 };
