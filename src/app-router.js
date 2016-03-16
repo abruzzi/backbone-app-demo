@@ -16,9 +16,9 @@ var AppRouter = Backbone.Router.extend({
     var collection = new ListItemCollection();
 
     collection.reset([{
-      name: "Asia", title: "Hello darkness"
+      title: "Asia", description: "Hello darkness"
     }, {
-      name: "Africa", tilte: "My old friend"
+      title: "Africa", description: "My old friend"
     }]);
 
     var listView = new ListView({
