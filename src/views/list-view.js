@@ -9,7 +9,8 @@ var ListView = Backbone.View.extend({
 		this.$el.html(template());
 		var that = this;
 		this.collection.forEach(function(model) {
-			that.$el.find('ul').append(new ListItemView(model).render().el);
+			var listItemView = new ListItemView(model)
+			that.$el.find('ul').append(listItemView.render().el);
 		})
 		
 		return this;
